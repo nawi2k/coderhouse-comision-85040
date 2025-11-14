@@ -1,0 +1,6 @@
+@use "variables" as v;
+
+.header nav ul{
+    @include v.flex(center,wrap);
+}
+

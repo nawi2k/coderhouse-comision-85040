@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+$fuente: 'Oswald', sans-serif;
+$background-color: rgb(166, 200, 252);
+$fuente-primaria: white;
+$fuente-secundaria: gold;
+$fuente-hover: crimson;
+$width: 30%;
+
+* {
+    font-family: $fuente;
+    color: $fuente-primaria;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
