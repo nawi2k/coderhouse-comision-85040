@@ -1,0 +1,53 @@
+.productos {
+  padding: 40px;
+
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    .card-producto {
+      @include card(white);
+
+      img {
+        width: 100%;
+        border-radius: $radius;
+      }
+
+      h3 {
+        margin-top: 10px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      p {
+        color: $color-texto;
+      }
+
+      .btn-comprar {
+        @extend %btn-base;
+        background-color: $color-primario;
+        color: white;
+
+        &:hover {
+          background-color: $color-secundario;
+        }
+      }
+    }
+  }
+}
+
+//
+// RESPONSIVE
+//
+@media (max-width: 992px) {
+  .productos .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .productos .grid-productos {
+    grid-template-columns: 1fr;
+  }
+}

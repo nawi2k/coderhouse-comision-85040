@@ -1,6 +1,15 @@
-@use "variables" as v;
+.hero {
+  background-color: $color-fondo;
+  padding: 80px 20px;
+  text-align: center;
 
-.header nav ul{
-    @include v.flex(center,wrap);
+  h1 {
+    font-size: 60px;
+    color: $color-primario;
+  }
+
+  p {
+    font-size: 22px;
+    color: $color-texto;
+  }
 }
-

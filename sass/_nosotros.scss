@@ -1,0 +1,15 @@
+.nosotros {
+  padding: 40px;
+
+  .texto {
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: $radius;
+    box-shadow: $sombra;
+  }
+}

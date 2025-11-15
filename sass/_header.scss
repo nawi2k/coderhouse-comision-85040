@@ -1,37 +1,23 @@
-@use "variables" as *;
+header {
+  background-color: $color-primario;
 
-header{
+  nav {
+    ul {
+      @include flex-center(row, 20px);
 
-    .img {
-        display: block;
-        width: 30%;
+      li {
+        list-style: none;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            color: $color-secundario;
+          }
+        }
+      }
     }
-
-    .h1{
-        text-align: center;
-        color: rgb(255, 255, 255);
-    }
-
-
-    .navbar ul {
-    display: flex;
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
-
+  }
 }
-    .navbar ul li{
-        margin: 0 170px;
-    }
-
-.header nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-    
-}
-
