@@ -1,10 +1,4 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   background-color: $color-primario;
- *   |                     ^^^^^^^^^^^^^^^
- *   '
- *   sass\_header.scss 2:21  @use
- *   sass\style.scss 4:1     root stylesheet */
+
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
