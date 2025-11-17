@@ -1,0 +1,21 @@
+@use "variables" as v;
+
+
+footer {
+  background-color: #000;
+  color: white;
+  padding: 30px;
+  text-align: center;
+
+  a {
+    color: white;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: .3s;
+
+    &:hover {
+      color: v.$color-hover;
+      transform: scale(1.2);
+    }
+  }
+}

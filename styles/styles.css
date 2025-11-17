@@ -1,0 +1,117 @@
+header {
+  background-color: #f3f5f7;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a :hover {
+  color: crimson;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+footer a {
+  color: white;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: crimson;
+  transform: scale(1.2);
+}
+
+.nosotros {
+  padding: 40px;
+}
+.nosotros .texto {
+  max-width: 800px;
+  margin: auto;
+  font-size: 20px;
+}
+.nosotros img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.productos {
+  padding: 40px;
+}
+.productos .grid-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.productos .grid-productos .card-producto {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.productos .grid-productos .card-producto:hover {
+  transform: scale(1.05);
+}
+.productos .grid-productos .card-producto img {
+  width: 100%;
+  border-radius: 12px;
+}
+.productos .grid-productos .card-producto h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.productos .grid-productos .card-producto p {
+  color: #f3f5f7;
+}
+.productos .grid-productos .card-producto .btn-comprar {
+  background-color: white;
+  color: white;
+}
+.productos .grid-productos .card-producto .btn-comprar:hover {
+  color: crimson;
+}
+
+@media (max-width: 992px) {
+  .productos .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .productos .grid-productos {
+    grid-template-columns: 1fr;
+  }
+}
+.hero {
+  background-color: white;
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+.hero h1 {
+  font-size: 60px;
+  color: #f3f5f7;
+}
+.hero p {
+  font-size: 22px;
+  color: #f3f5f7;
+}
+
+/*# sourceMappingURL=styles.css.map */

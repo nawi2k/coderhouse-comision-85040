@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+.hero {
+  background-color: v.$background;
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 40px;
+
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: v.$fuente-primaria;
+  }
+
+  p {
+    font-size: 22px;
+    color: v.$fuente-primaria;
+  }
+}
+
+

@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+@mixin flex-center($direction: row, $gap: 10px) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin card($bg: white) {
+  background-color: $bg;
+  box-shadow: v.$sombra;
+  border-radius: v.$radius;
+  padding: 20px;
+  transition: transform .3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+

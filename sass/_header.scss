@@ -1,0 +1,24 @@
+@use "variables" as v;
+
+header {
+  background-color: v.$fuente-primaria;
+
+  nav {
+    ul {
+
+      li {
+        list-style: none;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+
+          :hover {
+            color: v.$color-hover;
+          }
+        }
+      }
+    }
+  }
+}
